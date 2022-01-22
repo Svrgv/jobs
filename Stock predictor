@@ -1,0 +1,17 @@
+import u r l l i b
+o s e b x t i c k e r s = [ ”ACTA” , ”ACY” , ”AIK” , ”AKER” , ”AKSO” , ”ALGETA” , ”ASC” , ”ATEA” , ”
+AUSS” , ”BLO” , ”BWG” , ”CEQ” , ”COP” , ”DNBNOR” , ”DNO” , ”EDBASA” , ”EKO” , ”FOE” , ”FRO
+” , ”GOGL” , ”HNB” , ”KOA” , ”LSG” , ”MAMUT” , ”MHG” , ”NAS” , ”NHY” , ”NPRO” , ”NSG” , ”
+OPERA” , ”ORK” , ”PGS” , ”PRON” , ”PRS” , ”RCL” , ”REC” , ”SALM” , ”SAS−NOK” , ”SCH” , ”
+SDRL” , ”SEVAN” , ”SNI” , ”SONG” , ”STB” , ”STL” , ”SUB” , ”TEL” , ”TGS” , ”TOM” , ”VEI” ,
+”VIZ” , ”WWI” , ”YAR” ]
+u r l s t a r t = ” h t tp : / / hopey . n e t f o n d s . no/ p a p e r hi s t o r y . php? paper=”
+u rl e n d = ” .OSE&c s v f o rm a t=c s v ”
+pr int ” Downloading p r i c e h i s t o r y from OSE . . ”
+for t i c k e r in o s e b x t i c k e r s :
+pr int ” Downloading ” + t i c k e r + ” . . . ”
+i n f i l e = u r l l i b . u rl o p e n ( u r l s t a r t + t i c k e r + u rl e n d )
+o u t f i l e = open ( t i c k e r + ” . c s v . ” , ”w” )
+o u t f i l e . w ri t e ( i n f i l e . re ad ( ) )
+i n f i l e . c l o s e ( )
+o u t f i l e . c l o s e ( )
